@@ -23,6 +23,7 @@ module.exports = {
             colors: true
         }
     },
+    devtool: "source-map",
     module: {
         rules: [
             {
