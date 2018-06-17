@@ -6,12 +6,10 @@
   "author": "fjoggis@gmail.com",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack",
-    "dev": "nodemon --watch webpack.config.js --watch src/server/server.ts src/server/server.ts --exec ts-node"
+    "start": "nodemon --watch webpack.config.js --watch src/server/server.ts src/server/server.ts --exec ts-node",
+    "build": "webpack"
   },
   "devDependencies": {
-    "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^0.28.11",
     "extract-loader": "^2.0.1",
@@ -25,8 +23,7 @@
     "ts-node": "^6.1.1",
     "typescript": "^2.9.2",
     "webpack": "^4.12.0",
-    "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-cli": "^3.0.8"
   },
   "dependencies": {
     "koa": "^2.5.1",
