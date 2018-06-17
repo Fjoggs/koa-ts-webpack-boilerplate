@@ -6,7 +6,7 @@ module.exports = {
     entry: {
         main: [
             'webpack-hot-middleware/client?reload=true',
-            './src/main.js'
+            './src/client/main.ts'
         ]
     },
     mode: 'development',
@@ -26,6 +26,14 @@ module.exports = {
     devtool: "source-map",
     module: {
         rules: [
+            {
+                test: /\.ts$/,
+                use: [
+                    {
+                        loader: "ts-loader"
+                    }
+                ]
+            },
             {
                 test: /\.js$/,
                 use: [
@@ -73,7 +81,7 @@ module.exports = {
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new HTMLWebpackPlugin({
-            template: "./src/index.html"
+            template: "./src/client/index.html"
         })
     ]
 }
