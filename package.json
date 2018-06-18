@@ -19,6 +19,7 @@
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "koa-webpack-dev-middleware": "^2.0.2",
     "koa-webpack-hot-middleware": "^1.0.3",
     "nodemon": "^1.17.5",
     "prettier": "^1.13.5",
@@ -32,7 +33,6 @@
   },
   "dependencies": {
     "koa": "^2.5.1",
-    "koa-static": "^4.0.3",
-    "koa-webpack-dev-middleware": "^2.0.2"
+    "koa-static": "^4.0.3"
   }
 }
